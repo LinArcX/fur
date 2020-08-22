@@ -1,7 +1,7 @@
-#include "../include/nuboWindow.h"
+#include "../include/nuboForm.h"
 
 void
-drawWindow(const char *title, float x, float y, float w, float h)
+nubo_form(const char *title, float x, float y, float w, float h)
 {
     float cornerRadius = 3.0f;
     NVGpaint shadowPaint;

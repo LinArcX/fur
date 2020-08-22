@@ -4,14 +4,14 @@
 #include "nuboBase.h"
 
 void
-drawEditBox(const char *text, float x, float y, float w, float h);
+nubo_edit_box(const char *text, float x, float y, float w, float h);
 
 void
-drawEditBoxNum(const char *text,
-               const char *units,
-               float x,
-               float y,
-               float w,
-               float h);
+nubo_edit_box_num(const char *text,
+                  const char *units,
+                  float x,
+                  float y,
+                  float w,
+                  float h);
 
 #endif /* NUBO_EDITBOX_H */

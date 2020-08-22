@@ -2,7 +2,7 @@
 #include <math.h>
 
 #include <nuboBase.h>
-#include <nuboWindow.h>
+#include <nuboForm.h>
 #include <nuboEditBox.h>
 
 void
@@ -54,9 +54,9 @@ render()
     key_manager();
     set_background_color(DARK_GRAY);
 
-    drawWindow("Form", 0, 0, fBase.width, fBase.height);
-    drawEditBox("Email", 40, 40, 300, 30);
-    drawEditBox("Name", 40, 80, 300, 30);
+    nubo_form("Form", 0, 0, fBase.width, fBase.height);
+    nubo_edit_box("Email", 40, 40, 300, 30);
+    nubo_edit_box("Name", 40, 80, 300, 30);
 
     // drawSearchBox(fBase.vg, "Search", 10, 10, 280, 25);
 

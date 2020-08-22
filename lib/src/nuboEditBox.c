@@ -1,7 +1,7 @@
 #include "../include/nuboEditBox.h"
 
 void
-drawEditBoxBase(float x, float y, float w, float h)
+nubo_edit_box_base(float x, float y, float w, float h)
 {
     NVGpaint bg;
     // Edit
@@ -26,10 +26,10 @@ drawEditBoxBase(float x, float y, float w, float h)
 }
 
 void
-drawEditBox(const char *text, float x, float y, float w, float h)
+nubo_edit_box(const char *text, float x, float y, float w, float h)
 {
 
-    drawEditBoxBase(x, y, w, h);
+    nubo_edit_box_base(x, y, w, h);
 
     nvgFontSize(fBase.vg, 17.0f);
     nvgFontFace(fBase.vg, "inconsolata");
@@ -39,16 +39,16 @@ drawEditBox(const char *text, float x, float y, float w, float h)
 }
 
 void
-drawEditBoxNum(const char *text,
-               const char *units,
-               float x,
-               float y,
-               float w,
-               float h)
+nubo_edit_box_num(const char *text,
+                  const char *units,
+                  float x,
+                  float y,
+                  float w,
+                  float h)
 {
     float uw;
 
-    drawEditBoxBase(x, y, w, h);
+    nubo_edit_box_base(x, y, w, h);
 
     uw = nvgTextBounds(fBase.vg, 0, 0, units, NULL, NULL);
 
