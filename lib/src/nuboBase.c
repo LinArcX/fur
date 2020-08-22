@@ -9,7 +9,7 @@
 #define GLFW_INCLUDE_GLEXT
 #define NANOVG_GL3_IMPLEMENTATION
 
-#include "../include/base.h"
+#include "../include/nuboBase.h"
 
 int premult = 0;
 NuboBase fBase;

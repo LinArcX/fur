@@ -1,4 +1,4 @@
-#include "../include/window.h"
+#include "../include/nuboWindow.h"
 
 void
 drawWindow(const char *title, float x, float y, float w, float h)

@@ -1,9 +1,9 @@
 #include <stdio.h>
 #include <math.h>
 
-#include <base.h>
-#include <window.h>
-#include <editBox.h>
+#include <nuboBase.h>
+#include <nuboWindow.h>
+#include <nuboEditBox.h>
 
 void
 process_key_escape(void)
@@ -45,7 +45,6 @@ void
 startup(void)
 {
     printf("App started.\n");
-    nubo_make_point();
 }
 
 void
@@ -80,7 +79,6 @@ void
 shutdown(void)
 {
     printf("App finished.\n");
-    nubo_del_point();
 }
 
 int

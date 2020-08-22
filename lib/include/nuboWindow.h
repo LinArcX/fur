@@ -1,7 +1,7 @@
 #ifndef NUBO_WINDOW_H
 #define NUBO_WINDOW_H
 
-#include "base.h"
+#include "nuboBase.h"
 
 void
 drawWindow(const char *title, float x, float y, float w, float h);

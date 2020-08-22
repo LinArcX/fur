@@ -1,4 +1,4 @@
-#include "../include/editBox.h"
+#include "../include/nuboEditBox.h"
 
 void
 drawEditBoxBase(float x, float y, float w, float h)
