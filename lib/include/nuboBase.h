@@ -8,7 +8,7 @@
 
 struct fonts
 {
-    int fontNormal, fontBold, fontIcons, fontEmoji;
+    int fontNormal, fontBold;
 };
 typedef struct fonts Fonts;
 
