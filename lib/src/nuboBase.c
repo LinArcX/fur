@@ -2,16 +2,12 @@
 #include <errno.h>
 #include <string.h>
 
-//#ifdef NANOVG_GLEW
-//#include <GL/glew.h>
-//#endif
-
 #define GLFW_INCLUDE_GLEXT
 #define NANOVG_GL3_IMPLEMENTATION
 
 #include "../include/nuboBase.h"
-#include "../include/ttf_roboto_regular.h"
-#include "../include/ttf_roboto_bold.h"
+#include "../include/ttf_inconsolata_bold.h"
+#include "../include/ttf_inconsolata_regular.h"
 
 int premult = 0;
 NuboBase fBase;
@@ -64,15 +60,21 @@ loadFonts(NVGcontext *vg, Fonts *data)
     if (vg == NULL)
         return -1;
 
-    data->fontNormal = nvgCreateFontMem(
-      vg, "sans", ttf_roboto_regular, ttf_roboto_regular_len, 0);
+    data->fontNormal = nvgCreateFontMem(vg,
+                                        "inconsolata",
+                                        ttf_inconsolata_regular,
+                                        ttf_inconsolata_regular_len,
+                                        0);
     if (data->fontNormal == -1) {
         printf("Could not add font italic.\n");
         return -1;
     }
 
-    data->fontBold = nvgCreateFontMem(
-      vg, "sans-bold", ttf_roboto_bold, ttf_roboto_bold_len, 0);
+    data->fontBold = nvgCreateFontMem(vg,
+                                      "inconsolata-bold",
+                                      ttf_inconsolata_bold,
+                                      ttf_inconsolata_bold_len,
+                                      0);
     if (data->fontBold == -1) {
         printf("Could not add font bold.\n");
         return -1;

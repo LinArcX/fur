@@ -2,7 +2,7 @@ LIB_DIR = ./lib/build
 SAMPLE_DIR = ./sample/build
 
 .PHONY: all
-all: clean build
+all: build
 
 build:
 	cd lib; make all; cp build/libnubo.so ~/libs

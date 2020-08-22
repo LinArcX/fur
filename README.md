@@ -20,6 +20,7 @@
 
 ## Generate .h file from .ttf
 If you want to use new fonts, just convert it to .h file using `xxd`. For instance:
+
 `xxd -i Roboto-Bold.ttf > ttf_roboto_bold.h`
 
 ## What does nubo mean?

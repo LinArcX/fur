@@ -32,7 +32,7 @@ drawEditBox(const char *text, float x, float y, float w, float h)
     drawEditBoxBase(x, y, w, h);
 
     nvgFontSize(fBase.vg, 17.0f);
-    nvgFontFace(fBase.vg, "sans");
+    nvgFontFace(fBase.vg, "inconsolata");
     nvgFillColor(fBase.vg, nvgRGBA(255, 255, 255, 64));
     nvgTextAlign(fBase.vg, NVG_ALIGN_LEFT | NVG_ALIGN_MIDDLE);
     nvgText(fBase.vg, x + h * 0.3f, y + h * 0.5f, text, NULL);
@@ -53,13 +53,13 @@ drawEditBoxNum(const char *text,
     uw = nvgTextBounds(fBase.vg, 0, 0, units, NULL, NULL);
 
     nvgFontSize(fBase.vg, 15.0f);
-    nvgFontFace(fBase.vg, "sans");
+    nvgFontFace(fBase.vg, "inconsolata");
     nvgFillColor(fBase.vg, nvgRGBA(255, 255, 255, 64));
     nvgTextAlign(fBase.vg, NVG_ALIGN_RIGHT | NVG_ALIGN_MIDDLE);
     nvgText(fBase.vg, x + w - h * 0.3f, y + h * 0.5f, units, NULL);
 
     nvgFontSize(fBase.vg, 17.0f);
-    nvgFontFace(fBase.vg, "sans");
+    nvgFontFace(fBase.vg, "inconsolata");
     nvgFillColor(fBase.vg, nvgRGBA(255, 255, 255, 128));
     nvgTextAlign(fBase.vg, NVG_ALIGN_RIGHT | NVG_ALIGN_MIDDLE);
     nvgText(fBase.vg, x + w - uw - h * 0.5f, y + h * 0.5f, text, NULL);
