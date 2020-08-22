@@ -9,10 +9,18 @@
 # Nubo
 > “The sky, a perfect empty canvas, offers clouds nonetheless. They shift and drift and beg interpretation… such is the nature of art.”― Jeb Dickerson
 
-# Prerequisites
+## Prerequisites
 - `make`
-- `glfw`
-- `glew`
+- `glfw-devel`
+
+## Build
+1. Create a directory called: `libs` in your home directory.
+2. Add it to `LD_LIBRARY_PATH`.
+3. `make`
+
+## Generate .h file from .ttf
+If you want to use new fonts, just convert it to .h file using `xxd`. For instance:
+`xxd -i Roboto-Bold.ttf > ttf_roboto_bold.h`
 
 ## What does nubo mean?
 It's an Esperanto word means: "cloud".

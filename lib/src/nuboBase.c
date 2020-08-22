@@ -2,9 +2,9 @@
 #include <errno.h>
 #include <string.h>
 
-#ifdef NANOVG_GLEW
-#include <GL/glew.h>
-#endif
+//#ifdef NANOVG_GLEW
+//#include <GL/glew.h>
+//#endif
 
 #define GLFW_INCLUDE_GLEXT
 #define NANOVG_GL3_IMPLEMENTATION

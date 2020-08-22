@@ -1,6 +1,6 @@
 CC = clang
 CFLAGS=  -Wall
-LIBS = -lnubo -lm -lGL -lGLEW -lglfw -ldl
+LIBS = -lnubo -lm -lGL -lglfw -ldl
 
 BD = ./build
 NUBO_LIB = ../lib/build
