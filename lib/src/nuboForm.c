@@ -53,7 +53,7 @@ nubo_form(const char *title, float x, float y, float w, float h)
     nvgStroke(fBase.vg);
 
     nvgFontSize(fBase.vg, 15.0f);
-    nvgFontFace(fBase.vg, "inconsolata-bold");
+    nvgFontFace(fBase.vg, "FontBold");
     nvgTextAlign(fBase.vg, NVG_ALIGN_CENTER | NVG_ALIGN_MIDDLE);
 
     nvgFontBlur(fBase.vg, 2);
